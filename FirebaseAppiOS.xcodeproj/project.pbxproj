@@ -30,9 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		35C4115C2DE4CBB800D86A2C /* Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		35C411692DE4CBB900D86A2C /* FirebaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		35C411732DE4CBB900D86A2C /* FirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C4115C2DE4CBB800D86A2C /* FirebaseAppiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseAppiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C411692DE4CBB900D86A2C /* FirebaseAppiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseAppiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		35C411732DE4CBB900D86A2C /* FirebaseAppiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseAppiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -94,9 +94,9 @@
 		35C4115D2DE4CBB800D86A2C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				35C4115C2DE4CBB800D86A2C /* Firebase.app */,
-				35C411692DE4CBB900D86A2C /* FirebaseTests.xctest */,
-				35C411732DE4CBB900D86A2C /* FirebaseUITests.xctest */,
+				35C4115C2DE4CBB800D86A2C /* FirebaseAppiOS.app */,
+				35C411692DE4CBB900D86A2C /* FirebaseAppiOSTests.xctest */,
+				35C411732DE4CBB900D86A2C /* FirebaseAppiOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,9 +104,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		35C4115B2DE4CBB800D86A2C /* Firebase */ = {
+		35C4115B2DE4CBB800D86A2C /* FirebaseAppiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35C4117D2DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "Firebase" */;
+			buildConfigurationList = 35C4117D2DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseAppiOS" */;
 			buildPhases = (
 				35C411582DE4CBB800D86A2C /* Sources */,
 				35C411592DE4CBB800D86A2C /* Frameworks */,
@@ -119,19 +119,19 @@
 			fileSystemSynchronizedGroups = (
 				35C4115E2DE4CBB800D86A2C /* Firebase */,
 			);
-			name = Firebase;
+			name = FirebaseAppiOS;
 			packageProductDependencies = (
 				35C412312DE5020B00D86A2C /* FirebaseAuth */,
 				35C412332DE5020B00D86A2C /* FirebaseFirestore */,
 				35C412352DE5020B00D86A2C /* FirebaseStorage */,
 			);
 			productName = Firebase;
-			productReference = 35C4115C2DE4CBB800D86A2C /* Firebase.app */;
+			productReference = 35C4115C2DE4CBB800D86A2C /* FirebaseAppiOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		35C411682DE4CBB900D86A2C /* FirebaseTests */ = {
+		35C411682DE4CBB900D86A2C /* FirebaseAppiOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35C411802DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseTests" */;
+			buildConfigurationList = 35C411802DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseAppiOSTests" */;
 			buildPhases = (
 				35C411652DE4CBB900D86A2C /* Sources */,
 				35C411662DE4CBB900D86A2C /* Frameworks */,
@@ -145,16 +145,16 @@
 			fileSystemSynchronizedGroups = (
 				35C4116C2DE4CBB900D86A2C /* FirebaseTests */,
 			);
-			name = FirebaseTests;
+			name = FirebaseAppiOSTests;
 			packageProductDependencies = (
 			);
 			productName = FirebaseTests;
-			productReference = 35C411692DE4CBB900D86A2C /* FirebaseTests.xctest */;
+			productReference = 35C411692DE4CBB900D86A2C /* FirebaseAppiOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		35C411722DE4CBB900D86A2C /* FirebaseUITests */ = {
+		35C411722DE4CBB900D86A2C /* FirebaseAppiOSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 35C411832DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseUITests" */;
+			buildConfigurationList = 35C411832DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseAppiOSUITests" */;
 			buildPhases = (
 				35C4116F2DE4CBB900D86A2C /* Sources */,
 				35C411702DE4CBB900D86A2C /* Frameworks */,
@@ -168,11 +168,11 @@
 			fileSystemSynchronizedGroups = (
 				35C411762DE4CBB900D86A2C /* FirebaseUITests */,
 			);
-			name = FirebaseUITests;
+			name = FirebaseAppiOSUITests;
 			packageProductDependencies = (
 			);
 			productName = FirebaseUITests;
-			productReference = 35C411732DE4CBB900D86A2C /* FirebaseUITests.xctest */;
+			productReference = 35C411732DE4CBB900D86A2C /* FirebaseAppiOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +198,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 35C411572DE4CBB800D86A2C /* Build configuration list for PBXProject "Firebase" */;
+			buildConfigurationList = 35C411572DE4CBB800D86A2C /* Build configuration list for PBXProject "FirebaseAppiOS" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -215,9 +215,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				35C4115B2DE4CBB800D86A2C /* Firebase */,
-				35C411682DE4CBB900D86A2C /* FirebaseTests */,
-				35C411722DE4CBB900D86A2C /* FirebaseUITests */,
+				35C4115B2DE4CBB800D86A2C /* FirebaseAppiOS */,
+				35C411682DE4CBB900D86A2C /* FirebaseAppiOSTests */,
+				35C411722DE4CBB900D86A2C /* FirebaseAppiOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,12 +273,12 @@
 /* Begin PBXTargetDependency section */
 		35C4116B2DE4CBB900D86A2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 35C4115B2DE4CBB800D86A2C /* Firebase */;
+			target = 35C4115B2DE4CBB800D86A2C /* FirebaseAppiOS */;
 			targetProxy = 35C4116A2DE4CBB900D86A2C /* PBXContainerItemProxy */;
 		};
 		35C411752DE4CBB900D86A2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 35C4115B2DE4CBB800D86A2C /* Firebase */;
+			target = 35C4115B2DE4CBB800D86A2C /* FirebaseAppiOS */;
 			targetProxy = 35C411742DE4CBB900D86A2C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -476,7 +476,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firebase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Firebase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebaseAppiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FirebaseAppiOS";
 			};
 			name = Debug;
 		};
@@ -495,7 +495,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firebase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Firebase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirebaseAppiOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FirebaseAppiOS";
 			};
 			name = Release;
 		};
@@ -536,7 +536,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		35C411572DE4CBB800D86A2C /* Build configuration list for PBXProject "Firebase" */ = {
+		35C411572DE4CBB800D86A2C /* Build configuration list for PBXProject "FirebaseAppiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35C4117B2DE4CBB900D86A2C /* Debug */,
@@ -545,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35C4117D2DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "Firebase" */ = {
+		35C4117D2DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseAppiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35C4117E2DE4CBB900D86A2C /* Debug */,
@@ -554,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35C411802DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseTests" */ = {
+		35C411802DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseAppiOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35C411812DE4CBB900D86A2C /* Debug */,
@@ -563,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35C411832DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseUITests" */ = {
+		35C411832DE4CBB900D86A2C /* Build configuration list for PBXNativeTarget "FirebaseAppiOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				35C411842DE4CBB900D86A2C /* Debug */,

@@ -11,9 +11,11 @@ import FirebaseCore
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        FirebaseAppiOS
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
+    ) -> Bool {
+        FirebaseApp
             .configure()
         return true
     }
@@ -22,18 +24,39 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct FirebaseAppiOS: App {
     // register app delegate for Firebase setup
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
+    @UIApplicationDelegateAdaptor(
+        AppDelegate.self
+    ) var delegate
+    @StateObject private var viewModel = AuthViewModel()
     @ObservedObject private var router = Router()
     var body: some Scene {
-       WindowGroup {
-                NavigationStack(path: $router.navPath) {
-                LoginView()
-                        .navigationDestination(for: Router.AppFlow.self) { destination in
-                            router.destination(for: destination)
-                            }
+        WindowGroup {
+            NavigationStack(
+                path: $router.navPath
+            ) {
+                Group {
+                    if viewModel.userSession == nil {
+                        LoginView()
+                    } else {
+                        ProfileView()
+                    }
+                }
+                .navigationDestination(
+                    for: Router.AppFlow.self
+                ) { destination in
+                    router
+                        .destination(
+                            for: destination
+                        )
+                }
             }
-        }.environmentObject(router)
+        }
+        .environmentObject(
+            router
+        )
+        .environmentObject(
+            viewModel
+        )
 
     }
 }

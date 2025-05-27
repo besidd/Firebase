@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct InputView: View {
+    
+    let placeHolder: String
+    @Binding var text: String
+    var isSecureFeild: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 12) {
+            if (isSecureFeild) {
+                SecureField(placeHolder, text: $text)
+            } else {
+                TextField(placeHolder, text: $text)
+            }
+            
+            Divider()
+        }
     }
+    
+        
 }
 
 #Preview {
-    InputView()
+    InputView(
+        placeHolder: "Sample",
+        text: .constant("")
+    )
 }
